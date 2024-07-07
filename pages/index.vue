@@ -1,19 +1,19 @@
 <template>
     <main>
 
-        <!-- <SectionHero />
+        <!-- <Section-Hero />
 
-        <SectionAboutme />
+        <Section-Aboutme />
 
-        <SectionCta />
+        <Section-Cta />
 
-        <SectionWorkshops /> 
+        <Section-Workshops /> 
 
-        <SectionGallery /> -->
+        <Section-Gallery /> -->
 
-        <!-- <SectionCatering /> -->
+        <!-- <Section-Catering /> -->
 
-        <SectionReviews />
+        <Section-Reviews />
         
     </main>
 </template>

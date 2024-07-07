@@ -11,15 +11,22 @@ export default {
       }
     },
     screens: {
-      sm: '540px',
-      md: '720px',
-      lg: '960px',
-      xl: '1140px',
-      xxl: '1320px',
+      sm: '576px',
+      md: '768px',
+      lg: '992px',
+      xl: '1200px',
+      xxl: '1400px',
     },
     container: {
       center: true,
-      padding: '1rem',
+      padding: {
+        DEFAULT: '16px',
+        sm: '18px',
+        md: '24px',
+        lg: '16px',
+        xl: '30px',
+        xxl: '40px',
+      },
     },
     extend: {
 

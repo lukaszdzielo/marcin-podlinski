@@ -5,9 +5,8 @@
         data() {
             return {
                 // Footer top
-                FT_KRS: 'KRS: 0123456789',
-                FT_NIP: 'NIP: 012 345 67 89',
-
+                FT_KRS: '0123456789',
+                FT_NIP: '012 345 67 89',
 
                 FT_Heading: 'Skontaktuj się ze mną',
                 FT_Text: 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius semper erat, quis porta felis lobortis vitae. Vivamus vitae viverra orci, cursus vehicula est.',
@@ -32,8 +31,8 @@
     <div class="bg-gray-100 text-sm md:text-base" :class="[FT_Padding]">
       <div class="container grid md:grid-cols-4 gap-y-4 gap-x-10">
         <div class="text-center">
-          <p v-if="FT_KRS">{{ FT_KRS }}</p>
-          <p v-if="FT_NIP">{{ FT_NIP }}</p>
+          <p v-if="FT_KRS">KRS: {{ FT_KRS }}</p>
+          <p v-if="FT_NIP">NIP: {{ FT_NIP }}</p>
         </div>
         <div class="md:col-span-3 lg:col-span-2 text-center md:text-start">
           <div v-if="FT_Heading" class="heading text-lg sm:text-xl md:text-2xl uppercase">{{ FT_Heading }}</div>

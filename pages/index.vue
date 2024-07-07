@@ -1,7 +1,7 @@
 <template>
     <main>
 
-        <SectionHero />
+        <!-- <SectionHero />
 
         <SectionAboutme />
 
@@ -9,9 +9,9 @@
 
         <SectionWorkshops /> 
 
-        <SectionGallery />
+        <SectionGallery /> -->
 
-        <SectionCatering />
+        <!-- <SectionCatering /> -->
 
         <SectionReviews />
         

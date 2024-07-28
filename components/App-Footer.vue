@@ -73,7 +73,7 @@ export default {
 
 			<div class="container grid md:grid-cols-4 gap-y-4 gap-x-10">
 				<div v-if="FB_Content" class="col-span-4 lg:col-start-2 lg:col-span-2" :class="[FB_Padding]">{{ FB_Content
-					}}</div>
+				}}</div>
 				<div class="custom__image relative col-span-4 lg:col-span-1 h-full hidden sm:block">
 					<img src="/assets/img/footer_img.png" alt="Footer sushi"
 						class="absolute bottom-0 start-2/3 lg:-start-24">

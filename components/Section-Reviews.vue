@@ -20,39 +20,40 @@ export default {
 			heading: 'Co o mnie mówią',
 			reviews: [
 				{
+					img: 'abcd',
 					name: 'Katarzyna S.',
 					date: '20.03.2024',
-					stars: '1',
+					stars: 1,
 					text: '“Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius semper erat, quis porta felis lobortis vitae. Vivamus vitae viverra orci, cursus vehicula est. Proin gravida, leo ullamcorper egestas tempor, sapien nulla dignissim quam, non vestibulum sem mi fringilla dui. Proin interdum at tellus lacinia fringilla.”'
 				},
 				{
 					name: 'Katarzyna S.',
 					date: '20.03.2024',
-					stars: '2',
+					stars: 2,
 					text: '“Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius semper erat, quis porta felis lobortis vitae. Vivamus vitae viverra orci, cursus vehicula est. Proin gravida, leo ullamcorper egestas tempor, sapien nulla dignissim quam, non vestibulum sem mi fringilla dui. Proin interdum at tellus lacinia fringilla.”'
 				},
 				{
 					name: 'Katarzyna S.',
 					date: '20.03.2024',
-					stars: '3',
+					stars: 3,
 					text: '“Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius semper erat, quis porta felis lobortis vitae. Vivamus vitae viverra orci, cursus vehicula est. Proin gravida, leo ullamcorper egestas tempor, sapien nulla dignissim quam, non vestibulum sem mi fringilla dui. Proin interdum at tellus lacinia fringilla.”'
 				},
 				{
 					name: 'Katarzyna S.',
 					date: '20.03.2024',
-					stars: '4',
+					stars: 4,
 					text: '“Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius semper erat, quis porta felis lobortis vitae. Vivamus vitae viverra orci, cursus vehicula est. Proin gravida, leo ullamcorper egestas tempor, sapien nulla dignissim quam, non vestibulum sem mi fringilla dui. Proin interdum at tellus lacinia fringilla.”'
 				},
 				{
 					name: 'Katarzyna S.',
 					date: '20.03.2024',
-					stars: '5',
+					stars: 5,
 					text: '“Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius semper erat, quis porta felis lobortis vitae. Vivamus vitae viverra orci, cursus vehicula est. Proin gravida, leo ullamcorper egestas tempor, sapien nulla dignissim quam, non vestibulum sem mi fringilla dui. Proin interdum at tellus lacinia fringilla.”'
 				},
 				{
 					name: 'Katarzyna S.',
 					date: '20.03.2024',
-					stars: '6',
+					stars: 6,
 					text: '“Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius semper erat, quis porta felis lobortis vitae. Vivamus vitae viverra orci, cursus vehicula est. Proin gravida, leo ullamcorper egestas tempor, sapien nulla dignissim quam, non vestibulum sem mi fringilla dui. Proin interdum at tellus lacinia fringilla.”'
 				},
 			]

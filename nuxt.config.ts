@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-
     baseURL: '/marcin-podlinski/',
   },
   modules: ['@nuxtjs/tailwindcss'],

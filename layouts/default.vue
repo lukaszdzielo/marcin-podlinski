@@ -3,6 +3,10 @@
     <App-Header />
     <slot />
 
-    <App-Footer /> 
+    <App-Footer />
 
 </template>
+
+<style lang="scss">
+$asd: 123;
+</style>

@@ -1,7 +1,7 @@
 <template>
-    <main>
+	<main>
 
-        <!-- <Section-Hero />
+		<!-- <Section-Hero />
 
         <Section-Aboutme />
 
@@ -11,14 +11,18 @@
 
         <Section-Gallery /> -->
 
-        <!-- <Section-Catering /> -->
+		<!-- <Section-Catering /> -->
 
-        <Section-Reviews />
-        
-    </main>
+		<Section-Reviews />
+
+	</main>
 </template>
 
 <script>
-    import { register } from 'swiper/element/bundle';
-    register();
+
+import { register } from 'swiper/element/bundle';
+register();
+
 </script>
+
+<style lang="scss"></style>

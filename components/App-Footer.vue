@@ -1,6 +1,4 @@
 <script>
-const currentYear = new Date().getFullYear();
-
 export default {
 	data() {
 		return {
@@ -15,13 +13,18 @@ export default {
 			FT_Email: 'podlinski.marcin@gmail.com',
 
 			// Footer bottom
-			FB_Content: `${currentYear} - Wszelkie prawa zastrzeżone`,
+			FB_Content: `Wszelkie prawa zastrzeżone`,
 
 			// settings
 			FT_Padding: 'pt-6 sm:pt-10 md:pt-16 xl:pt-20 pb-10 sm:pb-16 md:pb-20 xl:pb-24',
 
 			FB_Padding: 'pt-6 sm:pt-8 md:pt-14 pb-8 sm:pb-12 md:pb-20',
 		};
+	},
+	computed: {
+		currentYear() {
+			return new Date().getFullYear();
+		}
 	}
 };
 </script>
@@ -73,7 +76,8 @@ export default {
 
 			<div class="container grid md:grid-cols-4 gap-y-4 gap-x-10">
 				<div v-if="FB_Content" class="col-span-4 lg:col-start-2 lg:col-span-2" :class="[FB_Padding]">{{
-					FB_Content
+					currentYear }} - {{
+						FB_Content
 					}}</div>
 				<div class="custom__image relative col-span-4 lg:col-span-1 h-full hidden sm:block">
 					<img src="/assets/img/footer_img.png" alt="Footer sushi"

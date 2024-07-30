@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-    <ul class="flex">
+    <ul>
         <li v-for="n of getMax">
             <svg v-if="n <= rating" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
                 width="24px">

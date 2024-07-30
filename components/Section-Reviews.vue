@@ -20,7 +20,7 @@ export default {
 			heading: 'Co o mnie mówią',
 			reviews: [
 				{
-					img: 'abcd',
+					img: '',
 					name: 'Katarzyna S.',
 					date: '20.03.2023',
 					rating: '5',
@@ -71,11 +71,11 @@ export default {
 				},
 			},
 			// array with CSS styles
-			injectStyles: [`
-                    // .swiper {
-                    //     overflow: visible;
-                    // }
-                    `,],
+			// injectStyles: [`
+			// .swiper {
+			//     overflow: visible;
+			// }
+			// `,],
 
 			// array with CSS urls
 			// injectStylesUrls: ['path/to/one.css', 'path/to/two.css'],
@@ -84,7 +84,6 @@ export default {
 		Object.assign(swiperEl, params);
 
 		swiperEl.initialize();
-
 	},
 }
 

@@ -12,7 +12,7 @@ export default {
 <template>
 	<div class="card__review p-8 bg-gray-100 text-gray-900">
 		<div class="flex">
-			<div v-if="review.img || review.name" class="w-14 h-14 rounded-full overflow-hidden me-4">
+			<div v-if="review.img" class="w-14 h-14 rounded-full overflow-hidden me-4">
 				<img v-if="review.img" :src="review.img" :alt="review.name" class="size-full">
 				<div v-else class="size-full">{{ getFirstNameLetter }}</div>
 			</div>

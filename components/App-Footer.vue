@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-	<footer class="overflow-hidden">
+	<footer id="contact" class="overflow-hidden">
 		<div class="bg-gray-100 text-sm md:text-base" :class="[FT_Padding]">
 			<div class="container grid md:grid-cols-4 gap-y-4 gap-x-10">
 				<div class="text-center">

@@ -8,5 +8,5 @@
 </template>
 
 <style lang="scss">
-$asd: 123;
+body {}
 </style>

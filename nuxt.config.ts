@@ -4,5 +4,8 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/marcin-podlinski/',
   },
-  modules: ['@nuxtjs/tailwindcss'],
+  css: [
+    'assets/scss/main.scss',
+  ],
+  // modules: ['@nuxtjs/tailwindcss'],
 })

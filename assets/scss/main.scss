@@ -1,1 +1,8 @@
 @import '_variables';
+
+body {
+
+    @media (min-width: theme('screens.sm')) {}
+
+    @media (min-width: theme('screens.md')) {}
+}

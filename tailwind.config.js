@@ -28,6 +28,19 @@ export default {
         xxl: '40px',
       },
     },
+    opacity: {},
+    fontSize: {
+      base: ['1rem', '1.4'],
+    },
+    lineHeight: {
+      'normal': '1.4',
+    },
+    fontWeight: {
+      normal: '400',
+      bold: '700',
+    },
+    letterSpacing: {},
+    boxShadow: {},
     extend: {
 
     },

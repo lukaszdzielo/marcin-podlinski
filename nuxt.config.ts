@@ -5,4 +5,7 @@ export default defineNuxtConfig({
     baseURL: '/marcin-podlinski/',
   },
   modules: ['@nuxtjs/tailwindcss'],
+  css: [
+    'assets/scss/main.scss',
+  ],
 })

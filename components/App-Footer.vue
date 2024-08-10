@@ -40,7 +40,7 @@ export default {
 				</div>
 				<div class="md:col-span-3 lg:col-span-2 text-center md:text-start">
 					<div v-if="FT_Heading" class="uppercase">{{ FT_Heading }}</div>
-					<heading-hr />
+					<heading-hr class="mx-auto md:ms-0" />
 					<div v-if="FT_Text">{{ FT_Text }}</div>
 					<div v-if="tel || email" class="flex flex-col
 					gap-2 sm:gap-3 md:gap-4

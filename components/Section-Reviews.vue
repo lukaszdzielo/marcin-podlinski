@@ -1,6 +1,13 @@
 <template>
-	<section id="reviews"
-		class="pt-6 sm:pt-8 md:pt-12 xl:pt-28 pb-6 sm:pb-10 md:pb-14 xl:pb-32 bg-gray-900 text-gray-100">
+	<section id="reviews" class="pt-6 sm:pt-8 md:pt-12 xl:pt-28
+		pb-6 sm:pb-10 md:pb-14 xl:pb-32
+		bg-gray-900
+		text-gray-100
+		bg-no-repeat
+		bg-center
+		bg-cover
+		overflow-hidden
+		">
 		<div class="container">
 			<heading :heading="heading" />
 
@@ -66,7 +73,7 @@ export default {
 			slidesPerView: 1,
 			spaceBetween: 48,
 			breakpoints: {
-				720: {
+				768: {
 					slidesPerView: 2,
 				},
 			},
@@ -92,9 +99,6 @@ export default {
 <style lang="scss">
 #reviews {
 	background-image: url(/assets/img/reviews__bg.png);
-	background-position: center;
-	background-size: cover;
-	overflow: hidden;
 
 	.swiper {
 		overflow: visible !important;

@@ -39,16 +39,19 @@ export default {
 					<p v-if="FT_NIP">NIP: {{ FT_NIP }}</p>
 				</div>
 				<div class="md:col-span-3 lg:col-span-2 text-center md:text-start">
-					<div v-if="FT_Heading" class="heading  uppercase">{{ FT_Heading }}
-					</div>
-					<div
-						class="mt-2 sm:mt-3 md:mt-4 mb-3 sm:mb-4 md:mb-5 w-24 sm:w-32 md:w-40 min-h-1 bg-primary mx-auto md:mx-0">
-					</div>
+					<div v-if="FT_Heading" class="uppercase">{{ FT_Heading }}</div>
+					<heading-hr />
 					<div v-if="FT_Text">{{ FT_Text }}</div>
-					<div v-if="tel || email" class="flex flex-col gap-2 sm:gap-3 md:gap-4 pt-4 sm:pt-6 md:pt-9">
+					<div v-if="tel || email" class="flex flex-col
+					gap-2 sm:gap-3 md:gap-4
+					pt-4 sm:pt-6 md:pt-9">
 						<div v-if="tel">
-							<a :href="'tel:' + tel"
-								class="inline-flex justify-center md:justify-start items-center gap-2 sm:gap-3 md:gap-4 hover:text-primary transition-colors">
+							<a :href="'tel:' + tel" class="inline-flex
+								justify-center md:justify-start
+								items-center
+								gap-2 sm:gap-3 md:gap-4
+								hover:text-primary
+								transition-colors">
 								<svg class="w-6 sm:w-7 md:w-8 h-6 sm:h-7 md:h-8 fill-primary" width="36" height="36"
 									viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -58,8 +61,12 @@ export default {
 							</a>
 						</div>
 						<div v-if="email">
-							<a :href="'mailto:' + email"
-								class="inline-flex justify-center md:justify-start items-center gap-2 sm:gap-3 md:gap-4 hover:text-primary transition-colors">
+							<a :href="'mailto:' + email" class="inline-flex
+								justify-center md:justify-start
+								items-center
+								gap-2 sm:gap-3 md:gap-4
+								hover:text-primary
+								transition-colors">
 								<svg class="w-6 sm:w-7 md:w-8 h-6 sm:h-7 md:h-8 fill-primary" width="36" height="36"
 									viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -80,7 +87,8 @@ export default {
 			gap-y-4 gap-x-10">
 				<div v-if="FB_Content" class="
 				col-span-4 sm:col-start-2 sm:col-span-2
-				pt-6 sm:pt-8 md:pt-14 pb-8 sm:pb-12 md:pb-20">
+				pt-6 sm:pt-8 md:pt-14
+				pb-8 sm:pb-12 md:pb-20">
 					{{ currentYear }} - {{ FB_Content }}
 				</div>
 				<div class="relative

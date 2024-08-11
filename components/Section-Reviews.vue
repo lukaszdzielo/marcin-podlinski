@@ -1,13 +1,8 @@
 <template>
-	<section id="reviews" class="pt-6 sm:pt-8 md:pt-12 xl:pt-28
-		pb-6 sm:pb-10 md:pb-14 xl:pb-32
-		bg-gray-900
-		text-gray-100
-		bg-no-repeat
-		bg-center
-		bg-cover
-		overflow-hidden
-		">
+	<section id="reviews" class="py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28
+		bg-gray-900 text-gray-100
+		bg-no-repeat bg-center bg-cover
+		overflow-hidden">
 		<div class="container">
 			<heading :heading="heading" />
 

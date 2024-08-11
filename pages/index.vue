@@ -1,19 +1,21 @@
 <template>
 	<main>
 
-		<!-- <Section-Hero />
+		<!-- <section-hero /> -->
 
-        <Section-Aboutme />
+		<!-- <section-aboutme /> -->
 
-        <Section-Cta />
+		<section-cta />
 
-        <Section-Workshops /> 
+		<section-workshops />
 
-        <Section-Gallery /> -->
+		<section-learn />
 
-		<!-- <Section-Catering /> -->
+		<!-- <section-gallery /> -->
 
-		<Section-Reviews />
+		<!-- <section-catering /> -->
+
+		<section-reviews />
 
 	</main>
 </template>
@@ -24,5 +26,3 @@ import { register } from 'swiper/element/bundle';
 register();
 
 </script>
-
-<style lang="scss"></style>

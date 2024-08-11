@@ -1,4 +1,24 @@
-@import '_variables';
+@font-face {
+    font-family: 'Havelock Titling';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/assets/fonts/Havelock-Titling-500.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/assets/fonts/Poppins-300.woff2) format('woff2');
+}
+
+p {
+    +p {
+        margin-top: theme('spacing.5');
+    }
+}
 
 body {
 

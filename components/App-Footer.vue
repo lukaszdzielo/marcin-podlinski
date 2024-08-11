@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template>
-	<footer id="contact">
+	<footer id="contact" class="overflow-hidden">
 		<div class="
 			py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16 xxl:py-20
 			bg-gray-100">

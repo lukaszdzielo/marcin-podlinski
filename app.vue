@@ -9,7 +9,7 @@
 <script setup>
 useHead({
 	htmlAttrs: {
-		class: 'scroll-smooth',
+		class: 'scroll-smooth overflow-x-hidden',
 	},
 });
 </script>

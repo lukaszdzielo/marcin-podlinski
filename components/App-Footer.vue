@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template>
-	<footer id="contact" class="overflow-hidden">
+	<footer id="contact">
 		<div class="
 			py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16 xxl:py-20
 			bg-gray-100">
@@ -86,7 +86,7 @@ export default {
 					{{ currentYear }} - {{ FB_Content }}
 				</div>
 				<div class="relative
-				sm:col-span-1
+				col-span-1
 				h-full
 				hidden sm:block
 				pointer-events-none">

@@ -11,13 +11,30 @@ export default {
 
 <template>
     <section class="py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28">
-        <div class="container grid md:grid-cols-2 gap-12">
-            <div>
+        <div class="container grid lg:grid-cols-2 gap-8 md:gap-12">
+            <div class="content-center">
                 <heading :heading="heading" />
                 <div v-html="contentHTML"></div>
+                <a href="#contact" class="inline-flex 
+                mt-8 py-3 px-6
+                rounded-full
+                bg-primary
+                text-white
+                font-display">Skontaktuj się!</a>
             </div>
-            <div>
-                IMG
+            <div class="grid grid-cols-5 content-center">
+                <div class="col-span-4
+                mt-10 sm:mt-16 md:mt-20 lg:mt-16">
+                    <img src="/assets/img/section_workshops_1.jpg">
+                </div>
+                <div class="-ms-6 ms:-ms-8 md:-ms-12 lg:-ms-8">
+                    <img src="/assets/img/section_dots.svg">
+                </div>
+                <div class="col-span-4 col-start-2
+                    -mt-8 sm:-mt-12
+                    outline outline-8 outline-white">
+                    <img src="/assets/img/section_workshops_2.jpg">
+                </div>
             </div>
         </div>
     </section>

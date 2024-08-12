@@ -13,7 +13,7 @@
 
 		<!-- <section-gallery /> -->
 
-		<!-- <section-catering /> -->
+		<section-catering />
 
 		<section-reviews />
 

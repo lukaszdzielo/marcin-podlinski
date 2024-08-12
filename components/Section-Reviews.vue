@@ -1,6 +1,7 @@
 <template>
 	<section id="reviews" class="py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28
 		bg-gray-900 text-gray-100
+		bg-[url('/assets/img/section_reviews_bg.png')]
 		bg-no-repeat bg-center bg-cover
 		overflow-hidden">
 		<div class="container">
@@ -91,12 +92,10 @@ export default {
 
 </script>
 
-<style lang="scss">
+<!-- <style lang="scss">
 #reviews {
-	background-image: url(/assets/img/reviews__bg.png);
-
 	.swiper {
 		overflow: visible !important;
 	}
 }
-</style>
+</style> -->

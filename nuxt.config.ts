@@ -14,4 +14,5 @@ export default defineNuxtConfig({
 	css: [
 		'assets/scss/main.scss',
 	],
+	compatibilityDate: '2024-08-12',
 })

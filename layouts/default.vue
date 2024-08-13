@@ -1,6 +1,6 @@
 <template>
 
-    <app-Header />
+    <!-- <app-Header /> -->
     <slot />
 
     <app-Footer />

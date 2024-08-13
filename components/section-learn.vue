@@ -15,7 +15,7 @@ export default {
         bg-gray-100">
         <div class="container grid lg:grid-cols-2 gap-12 xl:gap-20">
             <img src="/assets/img/workshops/3.png" :alt="heading" class="order-1 lg:order-none
-            lg:-mt-44 xl:-mt-60
+            lg:-mt-44 xxl:-mt-60
             -mb-28 lg:mb-0">
             <div>
                 <h2 class="text-xl lg:text-2xl">{{ heading }}</h2>

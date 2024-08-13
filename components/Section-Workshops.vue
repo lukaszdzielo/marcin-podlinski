@@ -11,7 +11,7 @@ export default {
 
 <template>
     <section class="py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28">
-        <div class="container grid lg:grid-cols-2 gap-8 md:gap-12">
+        <div class="container grid lg:grid-cols-2 gap-8 md:gap-12 xl:gap-20">
             <div class="content-center">
                 <heading :heading="heading" />
                 <div v-html="contentHTML"></div>
@@ -25,15 +25,15 @@ export default {
             <div class="grid grid-cols-5 content-center">
                 <div class="col-span-4
                 mt-10 sm:mt-16 md:mt-20 lg:mt-16">
-                    <img src="/assets/img/section_workshops_1.jpg">
+                    <img src="/assets/img/workshops/1.jpg">
                 </div>
-                <div class="-ms-6 ms:-ms-8 md:-ms-12 lg:-ms-8">
+                <div class="-ms-6 ms:-ms-8 md:-ms-12 lg:-ms-8 pointer-events-none">
                     <img src="/assets/img/section_dots.svg">
                 </div>
                 <div class="col-span-4 col-start-2
                     -mt-8 sm:-mt-12
                     outline outline-8 outline-white">
-                    <img src="/assets/img/section_workshops_2.jpg">
+                    <img src="/assets/img/workshops/2.jpg">
                 </div>
             </div>
         </div>

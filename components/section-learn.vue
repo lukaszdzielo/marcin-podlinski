@@ -10,10 +10,13 @@ export default {
 </script>
 
 <template>
-    <section class="py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28
+    <section class="lg:mt-24 xl:mt-16 xxl:mt-28
+    py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28
         bg-gray-100">
-        <div class="container grid md:grid-cols-2 gap-12">
-            IMG
+        <div class="container grid lg:grid-cols-2 gap-12 xl:gap-20">
+            <img src="/assets/img/workshops/3.png" :alt="heading" class="order-1 lg:order-none
+            lg:-mt-44 xl:-mt-60
+            -mb-28 lg:mb-0">
             <div>
                 <h2 class="text-xl lg:text-2xl">{{ heading }}</h2>
                 <heading-hr />

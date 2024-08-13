@@ -12,7 +12,7 @@ export default {
 <template>
     <section class="py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28
     bg-gray-900 text-gray-100">
-        <div class="container grid grid-cols-6 gap-6 md:gap-12">
+        <div class="container grid grid-cols-6 gap-6 md:gap-12 xl:gap-20">
             <div class="col-span-6 md:col-span-3 lg:col-span-4">
                 <heading :heading="heading" />
                 <p>{{ content }}</p>

@@ -3,14 +3,14 @@ export default {
 	data() {
 		return {
 			// Footer top
-			FT_KRS: '0123456789',
-			FT_NIP: '012 345 67 89',
+			ft_nip: '646 276 44 33',
+			ft_regon: '528137470',
 
 			FT_Heading: 'Skontaktuj się ze mną',
 			FT_Text: 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius semper erat, quis porta felis lobortis vitae. Vivamus vitae viverra orci, cursus vehicula est.',
 
 			tel: '+48 517 475 292',
-			email: 'podlinski.marcin@gmail.com',
+			email: 'sushibarshow@gmail.com',
 
 			// Footer bottom
 			FB_Content: `Wszelkie prawa zastrzeżone`,
@@ -34,8 +34,8 @@ export default {
 				gap-y-4 gap-x-10">
 				<div class="text-center">
 					<img src="/assets/img/logo.svg" alt="Marcin Podliński" class="mx-auto mb-6">
-					<span v-if="FT_KRS" class="block">KRS: {{ FT_KRS }}</span>
-					<span v-if="FT_NIP" class="block">NIP: {{ FT_NIP }}</span>
+					<span v-if="ft_nip" class="block">NIP: {{ ft_nip }}</span>
+					<span v-if="ft_regon" class="block">REGON: {{ ft_regon }}</span>
 				</div>
 				<div class="md:col-span-3 lg:col-span-2
 					text-center md:text-start">

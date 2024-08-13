@@ -22,12 +22,12 @@ export default {
                 text-white
                 font-display">Skontaktuj się!</a>
             </div>
-            <div class="grid grid-cols-5 content-center">
+            <div class="grid grid-cols-5 content-center pointer-events-none select-none">
                 <div class="col-span-4
                 mt-10 sm:mt-16 md:mt-20 lg:mt-16">
                     <img src="~/assets/img/catering/1.jpg">
                 </div>
-                <div class="-ms-6 ms:-ms-8 md:-ms-12 lg:-ms-8 pointer-events-none">
+                <div class="-ms-6 ms:-ms-8 md:-ms-12 lg:-ms-8">
                     <img src="~/assets/img/section_dots.svg">
                 </div>
                 <div class="col-span-4 col-start-2

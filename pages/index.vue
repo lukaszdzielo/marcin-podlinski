@@ -3,7 +3,7 @@
 
 		<!-- <section-hero /> -->
 
-		<!-- <section-aboutme /> -->
+		<section-aboutme />
 
 		<section-cta />
 

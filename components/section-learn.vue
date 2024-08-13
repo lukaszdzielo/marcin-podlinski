@@ -14,7 +14,7 @@ export default {
     py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28
         bg-gray-100">
         <div class="container grid lg:grid-cols-2 gap-12 xl:gap-20">
-            <img src="/assets/img/workshops/3.png" :alt="heading" class="order-1 lg:order-none
+            <img src="~/assets/img/workshops/3.png" :alt="heading" class="order-1 lg:order-none
             lg:-mt-44 xxl:-mt-60
             -mb-28 lg:mb-0">
             <div>

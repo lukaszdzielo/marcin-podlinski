@@ -33,7 +33,7 @@ export default {
 				grid md:grid-cols-4
 				gap-y-4 gap-x-10">
 				<div class="text-center">
-					<img src="/assets/img/logo.svg" alt="Marcin Podliński" class="mx-auto mb-6">
+					<img src="~/assets/img/logo.svg" alt="Marcin Podliński" class="mx-auto mb-6">
 					<span v-if="ft_nip" class="block">NIP: {{ ft_nip }}</span>
 					<span v-if="ft_regon" class="block">REGON: {{ ft_regon }}</span>
 				</div>

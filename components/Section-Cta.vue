@@ -24,7 +24,7 @@ export default {
 				h-full
                 -mt-16 -mt-24 md:m-0
 				pointer-events-none">
-                <img src="/assets/img/section_cta_img.png" alt="Footer sushi" class="md:absolute
+                <img src="~/assets/img/section_cta_img.png" alt="Footer sushi" class="md:absolute
 						start-0
 						-top-1/2 lg:-top-3/4 xl:-top-full xxl:-top-[125%]
 						h-[160px] sm:h-[240px] md:h-[320px] xxl:h-[380px] 

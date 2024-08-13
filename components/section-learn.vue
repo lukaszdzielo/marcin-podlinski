@@ -11,13 +11,15 @@ export default {
 
 <template>
     <section class="lg:mt-24 xl:mt-16 xxl:mt-28
-    mb-20 lg:mb-0
+    mb-24 sm:mb-48 lg:mb-0
     py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28
         bg-gray-100">
         <div class="container grid lg:grid-cols-2 gap-12 xl:gap-20">
             <img src="~/assets/img/workshops/3.png" :alt="heading" class="order-1 lg:order-none
             lg:-mt-44 xxl:-mt-60
-            -mb-28 lg:mb-0">
+            -mb-36 sm:-mb-60 lg:mb-0
+            mx-auto
+            w-[75%] lg:w-full">
             <div>
                 <h2 class="text-xl lg:text-2xl">{{ heading }}</h2>
                 <heading-hr />

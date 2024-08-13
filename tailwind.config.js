@@ -101,7 +101,7 @@ export default {
 			addComponents({
 				".container": {
 					marginInline: "auto",
-					paddingInline: theme("spacing.4"),
+					paddingInline: theme("spacing.6"),
 					// "@apply px-4 mx-auto": {},
 
 					// Breakpoints

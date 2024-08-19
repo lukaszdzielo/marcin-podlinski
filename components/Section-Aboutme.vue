@@ -18,16 +18,16 @@ export default {
             </div>
             <div class="grid grid-cols-5 content-center pointer-events-none select-none">
                 <div class="-me-6 ms:-me-8 md:-me-12 lg:-me-8 pointer-events-none z-10	">
-                    <img src="~/assets/img/section_dots.svg">
+                    <img src="~/assets/img/section_dots.svg" alt="Dekoracja">
                 </div>
                 <div class="col-span-4
                 mt-10 sm:mt-16 md:mt-20 lg:mt-16">
-                    <img src="~/assets/img/aboutme/1.jpg">
+                    <img src="~/assets/img/aboutme/1.jpg" alt="Szef z nożem">
                 </div>
                 <div class="col-span-4 
                     -mt-8 sm:-mt-12
                     outline outline-8 outline-white">
-                    <img src="~/assets/img/aboutme/2.jpg">
+                    <img src="~/assets/img/aboutme/2.jpg" alt="Nigiri">
                 </div>
             </div>
         </div>

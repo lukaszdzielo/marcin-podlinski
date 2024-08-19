@@ -30,14 +30,14 @@ export default {
 			py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16 xxl:py-20
 			bg-gray-100">
 			<div class="container
-				grid md:grid-cols-4
+				grid md:grid-cols-3 lg:grid-cols-4
 				gap-y-4 gap-x-10">
 				<div class="text-center">
 					<img src="~/assets/img/logo.svg" alt="Marcin Podliński" class="mx-auto mb-6">
 					<span v-if="ft_nip" class="block">NIP: {{ ft_nip }}</span>
 					<span v-if="ft_regon" class="block">REGON: {{ ft_regon }}</span>
 				</div>
-				<div class="md:col-span-3 lg:col-span-2
+				<div class="md:col-span-2 lg:col-span-2
 					text-center md:text-start">
 					<div v-if="FT_Heading" class="uppercase">{{ FT_Heading }}</div>
 					<heading-hr class="mx-auto md:ms-0" />
@@ -92,7 +92,7 @@ export default {
 				pointer-events-none">
 					<img src="/assets/img/footer_img.png" alt="Footer sushi" class="absolute
 						bottom-0
-						-start-[125%] md:-start-[150%] xxl:-start-[125%]
+						-start-[125%] lg:-start-[150%] xxl:-start-[125%]
 						h-[240px] md:h-[260px] lg:h-[460px]
 						max-h-none
 						max-w-none">

@@ -25,15 +25,15 @@ export default {
             <div class="grid grid-cols-5 content-center pointer-events-none select-none">
                 <div class="col-span-4
                 mt-10 sm:mt-16 md:mt-20 lg:mt-16">
-                    <img src="~/assets/img/catering/1.jpg">
+                    <img src="~/assets/img/catering/1.jpg" alt="Szef układający sushi">
                 </div>
                 <div class="-ms-6 ms:-ms-8 md:-ms-12 lg:-ms-8">
-                    <img src="~/assets/img/section_dots.svg">
+                    <img src="~/assets/img/section_dots.svg" alt="Dekoracja">
                 </div>
                 <div class="col-span-4 col-start-2
                     -mt-8 sm:-mt-12
                     outline outline-8 outline-white">
-                    <img src="~/assets/img/catering/2.jpg">
+                    <img src="~/assets/img/catering/2.jpg" alt="Krojenie sushi">
                 </div>
             </div>
         </div>

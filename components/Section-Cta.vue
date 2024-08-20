@@ -24,7 +24,7 @@ export default {
 				h-full
                 -mb-28 sm:-mb-32 md:-mb-40 lg:mb-0
                 pointer-events-none select-none">
-                <img src="~/assets/img/section_cta_img.png" alt="Deska z sushi" class="lg:absolute
+                <img src="~/assets/img/cta/section_cta_img.png" alt="Deska z sushi" class="lg:absolute
 						start-0
 						-top-1/2 lg:-top-3/4 xl:-top-full xxl:-top-[150%]
 						h-[200px] sm:h-[240px] md:h-[320px] xxl:h-[380px] 

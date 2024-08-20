@@ -90,7 +90,7 @@ export default {
 				h-full
 				hidden sm:block
 				pointer-events-none">
-					<img src="/assets/img/footer_img.png" alt="Footer sushi" class="absolute
+					<img src="~/assets/img/footer_img.png" alt="Footer sushi" class="absolute
 						bottom-0
 						-start-[125%] lg:-start-[150%] xxl:-start-[125%]
 						h-[240px] md:h-[260px] lg:h-[460px]

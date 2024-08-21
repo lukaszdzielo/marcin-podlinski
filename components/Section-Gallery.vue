@@ -19,7 +19,7 @@ export default {
                     slidesPerView: 2,
                 },
                 992: {
-                    slidesPerView: 3.2,
+                    slidesPerView: 3.4,
                 },
                 // 1200: {
                 //     slidesPerView: 3.4,

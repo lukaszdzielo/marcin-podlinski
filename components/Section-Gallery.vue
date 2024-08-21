@@ -1,3 +1,17 @@
+<template>
+    <section id="gallery" class="py-4">
+        <swiper-container init="false">
+            <swiper-slide><img src="~/assets/img/catering/1.jpg"></swiper-slide>
+            <swiper-slide><img src="~/assets/img/catering/2.jpg"></swiper-slide>
+            <swiper-slide><img src="~/assets/img/gallery/1.jpg"></swiper-slide>
+            <swiper-slide><img src="~/assets/img/gallery/1.jpg"></swiper-slide>
+            <swiper-slide><img src="~/assets/img/gallery/2.jpg"></swiper-slide>
+            <swiper-slide><img src="~/assets/img/workshops/1.jpg"></swiper-slide>
+            <swiper-slide><img src="~/assets/img/workshops/2.jpg"></swiper-slide>
+        </swiper-container>
+    </section>
+</template>
+
 <script>
 export default {
     // data() {
@@ -8,7 +22,7 @@ export default {
     //     };
     // },
     mounted() {
-        const swiperEl = document.querySelector('swiper-container');
+        const swiperEl = document.querySelector('#gallery swiper-container');
         const params = {
             loop: true,
             slidesPerView: 1.5,
@@ -36,17 +50,3 @@ export default {
     },
 };
 </script>
-
-<template>
-    <section class="py-4">
-        <swiper-container init="false">
-            <swiper-slide><img src="~/assets/img/catering/1.jpg"></swiper-slide>
-            <swiper-slide><img src="~/assets/img/catering/2.jpg"></swiper-slide>
-            <swiper-slide><img src="~/assets/img/gallery/1.jpg"></swiper-slide>
-            <swiper-slide><img src="~/assets/img/gallery/1.jpg"></swiper-slide>
-            <swiper-slide><img src="~/assets/img/gallery/2.jpg"></swiper-slide>
-            <swiper-slide><img src="~/assets/img/workshops/1.jpg"></swiper-slide>
-            <swiper-slide><img src="~/assets/img/workshops/2.jpg"></swiper-slide>
-        </swiper-container>
-    </section>
-</template>

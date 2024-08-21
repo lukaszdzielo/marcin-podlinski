@@ -63,7 +63,7 @@ export default {
 		};
 	},
 	mounted() {
-		const swiperEl = document.querySelector('swiper-container');
+		const swiperEl = document.querySelector('#reviews swiper-container');
 		const params = {
 			loop: true,
 			slidesPerView: 1,

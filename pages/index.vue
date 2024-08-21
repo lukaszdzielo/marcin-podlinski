@@ -11,7 +11,7 @@
 
 		<section-learn />
 
-		<!-- <section-gallery /> -->
+		<section-gallery />
 
 		<section-catering />
 

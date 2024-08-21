@@ -1,7 +1,7 @@
 <template>
 	<section id="reviews" class="py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28
 		bg-gray-900 text-gray-100
-		bg-[url('/assets/img/reviews/section_reviews_bg.png')]
+		bg-[url('/assets/img/reviews/bg.png')]
 		bg-no-repeat bg-center bg-cover
 		overflow-hidden">
 		<div class="container">

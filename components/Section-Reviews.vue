@@ -5,7 +5,8 @@
 		bg-no-repeat bg-center bg-cover
 		overflow-hidden">
 		<div class="container">
-			<heading :heading="heading" />
+			<heading :heading="2" :text="heading"
+				:class="'font-display text-xl sm:text-2xl lg:text-3xl uppercase'" />
 
 			<swiper-container init="false">
 				<swiper-slide v-for="review of reviews">

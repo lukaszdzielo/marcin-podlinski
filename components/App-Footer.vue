@@ -6,7 +6,7 @@ export default {
 			ft_nip: '646 276 44 33',
 			ft_regon: '528137470',
 
-			FT_Heading: 'Skontaktuj się ze mną',
+			FT_Heading: 'Skontaktuj się<br class="sm:hidden">ze mną',
 			FT_Text: 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius semper erat, quis porta felis lobortis vitae. Vivamus vitae viverra orci, cursus vehicula est.',
 
 			tel: '+48 517 475 292',
@@ -39,8 +39,9 @@ export default {
 				</div>
 				<div class="md:col-span-2 lg:col-span-2
 					text-center md:text-start">
-					<div v-if="FT_Heading" class="uppercase">{{ FT_Heading }}</div>
-					<heading-hr class="mx-auto md:ms-0" />
+					<h3 v-if="FT_Heading" class="font-display text-xl uppercase" v-html="FT_Heading">
+					</h3>
+					<heading-hr v-if="FT_Heading" class="mx-auto md:ms-0" />
 					<div v-if="FT_Text">{{ FT_Text }}</div>
 					<div v-if="tel || email" class="
 						flex flex-col

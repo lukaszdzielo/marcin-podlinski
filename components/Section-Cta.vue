@@ -10,12 +10,13 @@ export default {
 </script>
 
 <template>
-    <section class="mb-12 md:mb-20 lg:mb-0
+    <section id="cta" class="mb-12 md:mb-20 lg:mb-0
     py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28
     bg-gray-900 text-gray-100">
         <div class="container grid grid-cols-6 gap-6 md:gap-12 xl:gap-20">
             <div class="col-span-6 lg:col-span-4">
-                <heading :heading="heading" />
+                <heading :heading="2" :text="heading"
+                    :class="'font-display text-xl sm:text-2xl lg:text-3xl uppercase'" />
                 <p>{{ content }}</p>
             </div>
             <div class="relative

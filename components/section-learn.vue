@@ -21,8 +21,8 @@ export default {
             mx-auto
             w-[75%] lg:w-full">
             <div>
-                <h2 class="text-xl lg:text-2xl">{{ heading }}</h2>
-                <heading-hr />
+                <heading :heading="2" :text="heading"
+                    :class="'text-xl sm:text-2xl'" />
                 <div v-html="contentHTML"></div>
             </div>
         </div>

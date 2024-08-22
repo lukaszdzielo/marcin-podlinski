@@ -1,7 +1,7 @@
 <template>
 	<main class="overflow-hidden">
 
-		<!-- <section-hero /> -->
+		<section-hero />
 
 		<section-aboutme />
 

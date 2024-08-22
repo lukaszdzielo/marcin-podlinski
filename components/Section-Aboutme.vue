@@ -10,10 +10,11 @@ export default {
 </script>
 
 <template>
-    <section class="py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28 xxl:pb-40">
+    <section id="aboutme" class="py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 xxl:py-28 xxl:pb-40">
         <div class="container grid lg:grid-cols-2 gap-8 md:gap-12 xl:gap-20">
             <div class="content-center lg:order-1">
-                <heading :heading="heading" />
+                <heading :heading="2" :text="heading"
+                    :class="'font-display text-xl sm:text-2xl lg:text-3xl uppercase'" />
                 <div v-html="contentHTML"></div>
             </div>
             <div class="grid grid-cols-5 content-center pointer-events-none select-none">

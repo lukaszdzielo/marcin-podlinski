@@ -16,7 +16,7 @@ export default {
     pb-6 sm:pb-10 md:pb-14 xl:pb-32 
     bg-gray-900 text-gray-100">
         <div class="container grid lg:grid-cols-2 gap-8 md:gap-12 xl:gap-20">
-            <div>
+            <div class="place-self-center">
                 <heading :heading="1" :text="heading"
                     :class="'font-display text-2xl sm:text-3xl lg:text-4xl uppercase'" />
                 <p class="text-lg">{{ content }}</p>

@@ -32,29 +32,19 @@ export default {
 </script>
 
 <template>
-   <header class="sticky top-0 left-0 right-0 z-10 py-4">
-      <!-- bg-gray-100 -->
-      <!-- <nav class="container flex justify-between">
-         <div class="logo">
-            <a :href="logo.url">logo</a>
-         </div>
+   <header class="sticky
+   top-0 inset-x-0
+   z-20 py-4
+   bg-gray-900 text-gray-100">
+      <nav class="container flex justify-between items-center">
+         <a :href="logo.url" class="logo h-[48px]">
+            <img src="https://placeholderjs.com/120x60" alt="Logo" class="size-full">
+         </a>
          <ul class="flex gap-8 items-center">
             <li v-for="item of nav">
                <a :href="item.url" :class="item.class">{{ item.text }}</a>
             </li>
          </ul>
-      </nav> -->
-      <div class="container">
-         <nav class="flex justify-between">
-            <div class="logo">
-               <a :href="logo.url">logo</a>
-            </div>
-            <ul>
-               <li v-for="item of nav">
-                  <a :href="item.url" :class="item.class">{{ item.text }}</a>
-               </li>
-            </ul>
-         </nav>
-      </div>
+      </nav>
    </header>
 </template>

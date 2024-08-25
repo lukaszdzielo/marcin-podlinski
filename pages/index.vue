@@ -1,5 +1,5 @@
 <template>
-	<main class="overflow-hidden">
+	<main class="-mt-20 overflow-hidden">
 
 		<section-hero />
 

@@ -22,7 +22,6 @@ export default {
             return Math.round(this.rating);
         },
         getMax() {
-            console.log('getMax');
             return this.showEmpty ? this.max : Math.round(this.rating);
         },
     },

@@ -14,13 +14,6 @@
 
 <script>
 export default {
-    // data() {
-    //     return {
-    //         gallery: [
-    //             { src: '@@/assets/img/aboutme/2.jpg', alt: '1 - alt' },
-    //         ],
-    //     };
-    // },
     mounted() {
         const swiperEl = document.querySelector('#gallery swiper-container');
         const params = {
@@ -35,12 +28,6 @@ export default {
                 992: {
                     slidesPerView: 3.4,
                 },
-                // 1200: {
-                //     slidesPerView: 3.4,
-                // },
-                // 1400: {
-                //     slidesPerView: 3.6,
-                // },
             },
         };
 

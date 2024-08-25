@@ -33,16 +33,17 @@ export default {
    mounted() {
 
       this.viewport = (window.innerWidth >= this.openCloseBreakpoint) ? 'desktop' : 'mobile';
+      this.showNav = (this.viewport === 'desktop') ? true : false;
 
       const observer = new ResizeObserver(entries => {
          for (const entry of entries) {
             if ((entry.contentRect.width >= this.openCloseBreakpoint) && (this.viewport === 'mobile')) {
                this.viewport = 'desktop';
-               this.showNav = 1;
+               this.showNav = true;
 
             } else if ((entry.contentRect.width < this.openCloseBreakpoint) && (this.viewport === 'desktop')) {
                this.viewport = 'mobile';
-               this.showNav = 0;
+               this.showNav = false;
             }
          }
       });

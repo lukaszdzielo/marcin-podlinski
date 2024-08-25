@@ -39,11 +39,9 @@ export default {
          for (const entry of entries) {
             if ((entry.contentRect.width >= this.openCloseBreakpoint) && (this.viewport === 'mobile')) {
                this.viewport = 'desktop';
-               this.showNav = true;
 
             } else if ((entry.contentRect.width < this.openCloseBreakpoint) && (this.viewport === 'desktop')) {
                this.viewport = 'mobile';
-               this.showNav = false;
             }
          }
       });
@@ -74,7 +72,7 @@ export default {
                   d="M480-429 316-265q-11 11-25 10.5T266-266q-11-11-11-25.5t11-25.5l163-163-164-164q-11-11-10.5-25.5T266-695q11-11 25.5-11t25.5 11l163 164 164-164q11-11 25.5-11t25.5 11q11 11 11 25.5T695-644L531-480l164 164q11 11 11 25t-11 25q-11 11-25.5 11T644-266L480-429Z" />
             </svg>
          </button>
-         <ul v-show="showNav" class="absolute lg:static
+         <ul v-show="showNav || (viewport === 'desktop')" class="absolute lg:static
          top-full inset-x-0
          flex flex-col lg:flex-row
          gap-y-4 gap-x-8

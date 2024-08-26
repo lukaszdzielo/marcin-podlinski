@@ -59,7 +59,7 @@ export default {
    bg-gray-900 text-gray-100">
       <nav class="relative container flex flex-wrap justify-between items-center">
          <a :href="logo.url" class="logo h-[48px]" @click="showNav = 0">
-            <img :src="logo.path" alt="Logo" class="size-full">
+            <img :src="logo.path" alt="Logo" class="h-full">
          </a>
          <button @click="showNav = !showNav" class="lg:hidden">
             <svg v-show="!showNav" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960"

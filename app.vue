@@ -8,6 +8,7 @@
 
 <script setup>
 useHead({
+	title: 'Sushi Show - Marcin Podliński',
 	htmlAttrs: {
 		class: 'scroll-smooth scroll-pt-20',
 	},

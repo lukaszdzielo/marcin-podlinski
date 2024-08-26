@@ -26,11 +26,12 @@ import { register } from 'swiper/element/bundle';
 register();
 
 useSeoMeta({
-	title: 'Sushi Show Marcin Podliński',
-	ogTitle: 'Sushi Show Marcin Podliński',
-	description: '...',
-	ogDescription: '...',
-	// ogImage: 'https://example.com/image.png',
-	// twitterCard: 'summary_large_image',
+// 	title: 'Sushi Show - Marcin Podliński',
+// 	// ogTitle: 'Sushi Show - Marcin Podliński',
+// 	description: '...',
+// 	ogDescription: '...',
+
+// 	// ogImage: 'https://example.com/image.png',
+// 	// twitterCard: 'summary_large_image',
 })
 </script>

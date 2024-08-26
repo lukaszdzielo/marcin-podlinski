@@ -1,4 +1,4 @@
-<script>
+<script>// lang="ts"
 export default {
     props: {
         rating: {
@@ -10,11 +10,11 @@ export default {
         },
         showHalf: {
             type: Boolean,
-            default: 1,
+            default: true,
         },
         showEmpty: {
             type: Boolean,
-            default: 1,
+            default: true,
         },
     },
     computed: {

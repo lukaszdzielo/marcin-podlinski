@@ -12,11 +12,12 @@ const { cards } = useSchedule()
 				<a :href="schedule.otherLink.to" class="inline-flex min-h-11 items-center font-normal text-primary-dark hover:underline">{{ schedule.otherLink.text }}</a>
 			</div>
 
-			<ul v-if="cards.length" class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 lg:overflow-visible">
+			<!-- Telefon: karuzela na całą szerokość ekranu. Tablet: 2 × 2. Desktop: 4 w rzędzie -->
+			<ul v-if="cards.length" class="-mx-4 flex snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4">
 				<li
 					v-for="card in cards"
 					:key="card.date + card.title"
-					class="flex shrink-0 basis-[72%] snap-start sm:basis-[calc((100%-2rem)/2.4)] lg:basis-[calc((100%-3rem)/4)]"
+					class="flex shrink-0 basis-[72%] snap-start"
 				>
 					<a
 						:href="card.url"

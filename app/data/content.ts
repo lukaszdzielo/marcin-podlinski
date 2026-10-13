@@ -120,6 +120,18 @@ export const learn = {
 export const gallery = {
 	heading: 'Z mojej kuchni',
 	instagramHandle: '@marcin_podlinski_sushi_chef',
+	// Pierwsze zdjęcie to duży kafelek. Na telefonie ostatnie zdjęcie jest ukryte (równa siatka 2 × 3).
+	// Kliknięcie otwiera pełnoekranową galerię ze wszystkimi zdjęciami.
+	photos: [
+		{ name: 'shaping-nigiri', alt: 'Uczestniczka warsztatów formuje nigiri z krewetką' },
+		{ name: 'topping-roll', alt: 'Układanie dodatków na rolce sushi' },
+		{ name: 'prep-station', alt: 'Stanowisko warsztatowe z rybą i nożami' },
+		{ name: 'heart-roll', alt: 'Rolka sushi z sercem z tuńczyka trzymana pałeczkami' },
+		{ name: 'nori-hands', alt: 'Dłonie układające składniki na nori' },
+		{ name: 'rolls-plate', alt: 'Talerz z rolkami przygotowanymi na warsztatach' },
+		{ name: 'flaming-dish', alt: 'Danie podane z płomieniem' },
+		{ name: 'tuna-hand', alt: 'Nigiri z tuńczykiem na dłoni' },
+	],
 }
 
 export const about = {

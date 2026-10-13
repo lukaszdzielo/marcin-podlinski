@@ -8,7 +8,7 @@ const props = withDefaults(defineProps<{
 	name: string
 	alt: string
 	sizes?: string
-	/** Szerokości wariantów w px – domyślnie 640 i 1280 (albo szerokość oryginału, gdy jest mniejszy) */
+	/** Szerokości wariantów w px – domyślnie 640 i 1280 (nigdy szersze niż oryginał) */
 	widths?: number[]
 	loading?: 'lazy' | 'eager'
 	fetchpriority?: 'high' | 'low' | 'auto'
@@ -24,11 +24,16 @@ const props = withDefaults(defineProps<{
 const png = ['cta-board', 'footer-board', 'nigiri-plate']
 const src = computed(() => `/${props.name}.${png.includes(props.name) ? 'png' : 'jpg'}`)
 
-// Oryginały węższe niż 1280 px – nie powiększamy ich
-const narrow: Record<string, number> = {
+// Oryginały węższe niż 1920 px – warianty nie mogą być od nich szersze (bez powiększania)
+const originalWidth: Record<string, number> = {
 	'cta-board': 1052, 'footer-board': 908, 'nigiri-plate': 664, 'group-with-marcin': 857, 'corporate-workshop': 771,
+	'hero-group': 1590, 'nori-hands': 857, 'prep-station': 1440, 'rolling-sushi': 1368, 'rolls-plate': 1364,
+	'shaping-nigiri': 1365, 'topping-roll': 1364, 'workshop-hands': 1364,
 }
-const widths = computed(() => props.widths ?? [640, narrow[props.name] ?? 1280])
+const widths = computed(() => {
+	const max = originalWidth[props.name] ?? Infinity
+	return [...new Set((props.widths ?? [640, 1280]).map(w => Math.min(w, max)))].sort((a, b) => a - b)
+})
 
 const img = useImage()
 const quality = { avif: 55, webp: 80 } as const

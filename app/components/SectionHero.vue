@@ -7,7 +7,7 @@ import { hero } from '~/data/content'
 		<!-- Zdjęcie: telefon – pas u góry, desktop – całe tło przesunięte w prawo -->
 		<AppPicture
 			name="hero-group"
-			:widths="[640, 1280, 1590]"
+			:widths="[640, 1280, 1920]"
 			alt=""
 			loading="eager"
 			fetchpriority="high"

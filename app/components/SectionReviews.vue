@@ -39,7 +39,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-	<section v-if="items.length" id="opinie" class="py-22 sm:py-28 lg:py-40">
+	<section v-if="items.length" id="opinie" class="pt-22 sm:pt-28 lg:pt-40">
 		<div class="container flex flex-col gap-12 lg:flex-row">
 			<div class="lg:w-1/3">
 				<SectionHeading :text="reviews.heading" />

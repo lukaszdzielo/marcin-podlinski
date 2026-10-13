@@ -12,19 +12,30 @@ const filters = [
 	{ id: 'catering', label: 'Catering' },
 ] as const
 
-const visible = computed(() =>
-	Array.from({ length: Math.min(perView.value, items.length) }, (_, k) => items[(index.value + k) % items.length]!),
-)
+// Ostatnia pozycja, przy której pasek jest jeszcze w pełni wypełniony kartami
+const maxIndex = computed(() => Math.max(items.length - perView.value, 0))
+// Pasek przesuwa się o jedną kartę (szerokość karty + odstęp 1.5rem)
+const trackStyle = computed(() => ({
+	transform: `translateX(calc(${-index.value} * (100% + 1.5rem) / ${perView.value}))`,
+}))
+const cardStyle = computed(() => ({
+	flexBasis: `calc((100% - ${perView.value - 1} * 1.5rem) / ${perView.value})`,
+}))
 const position = computed(() => {
 	const last = Math.min(index.value + perView.value, items.length)
 	return `${last > index.value + 1 ? `${index.value + 1}–${last}` : index.value + 1} z ${items.length}`
 })
 const filtered = computed(() => items.filter(r => filter.value === 'all' || r.type === filter.value))
 
+// Na końcu wraca płynnie na początek (i odwrotnie)
 const step = (dir: number) => {
-	index.value = (index.value + dir * perView.value + items.length * 10) % items.length
+	const next = index.value + dir
+	index.value = next > maxIndex.value ? 0 : next < 0 ? maxIndex.value : next
 }
-const onResize = () => (perView.value = window.innerWidth < 640 ? 1 : 2)
+const onResize = () => {
+	perView.value = window.innerWidth < 640 ? 1 : 2
+	index.value = Math.min(index.value, maxIndex.value)
+}
 const onKeydown = (e: KeyboardEvent) => e.key === 'Escape' && (showAll.value = false)
 
 onMounted(() => {
@@ -39,7 +50,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-	<section v-if="items.length" id="opinie" class="pt-22 sm:pt-28 lg:pt-40">
+	<section v-if="items.length" id="opinie" class="py-22 sm:py-28 lg:py-40">
 		<div class="container flex flex-col gap-12 lg:flex-row">
 			<div class="lg:w-1/3">
 				<SectionHeading :text="reviews.heading" />
@@ -57,12 +68,15 @@ onBeforeUnmount(() => {
 					<span class="ms-2 text-sm text-ink-soft">{{ position }}</span>
 				</div>
 			</div>
-			<div class="grid gap-6 sm:grid-cols-2 lg:w-2/3">
+			<div class="overflow-hidden lg:w-2/3">
+				<div class="flex gap-6 transition-transform duration-500 ease-out motion-reduce:transition-none" :style="trackStyle">
 				<figure
-					v-for="(r, i) in visible"
+					v-for="(r, i) in items"
 					:key="r.name + i"
-					class="flex flex-col gap-4 p-8"
+					class="flex shrink-0 grow-0 flex-col gap-4 p-8"
 					:class="i % 2 ? 'bg-ink text-paper' : 'bg-paper'"
+					:style="cardStyle"
+					:aria-hidden="i < index || i >= index + perView ? 'true' : undefined"
 				>
 					<div class="flex items-start justify-between">
 						<span class="h-10 font-display text-[80px] leading-[0.6]" :class="i % 2 ? 'text-[#ff6f60]' : 'text-primary-dark'" aria-hidden="true">“</span>
@@ -74,6 +88,7 @@ onBeforeUnmount(() => {
 						<span class="text-sm font-normal">{{ r.name }}</span>
 					</figcaption>
 				</figure>
+				</div>
 			</div>
 		</div>
 

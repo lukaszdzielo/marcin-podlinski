@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reviews, site } from '~/data/content'
+import { preview, site } from '~/data/content'
 
 useSeoMeta({
 	title: site.title,
@@ -8,8 +8,8 @@ useSeoMeta({
 	ogDescription: site.description,
 	ogType: 'website',
 	ogLocale: 'pl_PL',
-	// Podgląd z przykładowymi opiniami nie powinien trafić do wyszukiwarek
-	robots: reviews.sample && reviews.items.length ? 'noindex, nofollow' : undefined,
+	// Makieta z przykładową treścią nie powinna trafić do wyszukiwarek
+	robots: preview ? 'noindex, nofollow' : undefined,
 })
 </script>
 

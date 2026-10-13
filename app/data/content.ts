@@ -3,6 +3,14 @@
  * Puste listy (terminy, opinie, FAQ) chowają odpowiednie sekcje na stronie.
  */
 
+/**
+ * TRYB PODGLĄDU (makieta dla klienta / portfolio):
+ * terminy, opinie, odpowiedzi w FAQ i część tekstów „o mnie” są przykładowe.
+ * Przed startem strony podmień je na prawdziwe i ustaw `preview: false`.
+ * Dopóki `preview: true`, strona ma noindex (nie trafia do Google).
+ */
+export const preview = true
+
 export const site = {
 	name: 'Sushi Show',
 	owner: 'Marcin Podliński',
@@ -46,7 +54,10 @@ export const schedule = {
 	sheetCsvUrl: '',
 	maxItems: 4,
 	events: [
-		// Przykład: { title: 'Warsztaty sushi', date: '2026-11-14', url: 'https://…' },
+		{ title: 'Warsztaty sushi', date: '2026-11-14', url: '#kontakt' },
+		{ title: 'Warsztaty sushi', date: '2026-11-20', url: '#kontakt' },
+		{ title: 'Warsztaty sushi', date: '2026-11-28', url: '#kontakt' },
+		{ title: 'Warsztaty sushi', date: '2026-12-12', url: '#kontakt' },
 	] as ScheduleEvent[],
 }
 
@@ -85,7 +96,7 @@ export const cta = {
 
 export const workshops = {
 	heading: 'Jak wyglądają moje warsztaty',
-	intro: 'Każdy ma swoje stanowisko, składniki i narzędzia. Ja jestem obok – podpowiadam i poprawiam.',
+	intro: 'Każdy ma swoje stanowisko, składniki i narzędzia. Ja jestem obok – podpowiadam i poprawiam. Warsztaty trwają około 3 godzin.',
 	steps: [
 		{ title: 'Ryż i składniki', text: 'Gotujemy i doprawiamy ryż, poznajemy ryby, warzywa i dodatki.' },
 		{ title: 'Krojenie', text: 'Pokażę Ci, jak trzymać nóż i kroić rybę oraz warzywa do rolek i nigiri.' },
@@ -116,6 +127,7 @@ export const about = {
 	lead: 'Sushi master i twórca Sushi Show. Japońska kuchnia to moja pasja, a dzielenie się nią z innymi to najlepsza część mojej pracy.',
 	paragraphs: [
 		'Na warsztatach stawiam na konkret: pokazuję, jak przygotować ryż, jak kroić rybę i warzywa i jak zawinąć rolkę, która się nie rozpada. Bez zadęcia, za to z dużą dawką humoru.',
+		'Sushi robię od lat – zaczynałem w kuchniach restauracji, a dziś prowadzę własne warsztaty i catering. Najbardziej lubię moment, gdy ktoś, kto pierwszy raz trzyma matę, zawija rolkę, z której jest naprawdę dumny.',
 	],
 }
 
@@ -125,14 +137,9 @@ export type Review = {
 	text: string
 }
 
-export const reviews: { heading: string; intro: string; sample: boolean; items: Review[] } = {
+export const reviews: { heading: string; intro: string; items: Review[] } = {
 	heading: 'Co o mnie mówią',
 	intro: 'Kilka słów od osób, które gotowały ze mną na warsztatach albo zamawiały u mnie catering.',
-	// PODGLĄD DLA KLIENTA: poniższe opinie są przykładowe – przed startem strony
-	// podmień je na prawdziwe (za zgodą autorów, tylko imię i inicjał nazwiska)
-	// i ustaw `sample: false`. Dopóki `sample: true`, strona ma noindex (nie trafia do Google).
-	// Sekcja i link „Opinie” chowają się, gdy lista jest pusta.
-	sample: true,
 	items: [
 		{ name: 'Anna K.', type: 'warsztaty', text: 'Zamiast kolejnego wyjścia na kręgle zrobiliśmy sushi i to był strzał w dziesiątkę. Marcin tłumaczy spokojnie i z humorem, a na koniec wszyscy byli dumni ze swoich rolek.' },
 		{ name: 'Magda P.', type: 'warsztaty', text: 'Świetna atmosfera i dużo śmiechu. Nawet dziewczyny, które pierwszy raz trzymały matę, zrobiły piękne uramaki.' },
@@ -142,15 +149,14 @@ export const reviews: { heading: string; intro: string; sample: boolean; items: 
 
 export const faq: { heading: string; items: { q: string; a: string }[] } = {
 	heading: 'O co najczęściej pytacie',
-	// Sekcja i link „FAQ” w menu chowają się, dopóki lista jest pusta.
-	// Do uzupełnienia przez Marcina (odkomentuj, gdy będą odpowiedzi):
-	// { q: 'Czy trzeba umieć gotować?', a: 'Nie. Zaczynamy od podstaw – od ryżu i krojenia – i krok po kroku dochodzimy do gotowych rolek.' },
-	// { q: 'Ile osób może wziąć udział?', a: '' },
-	// { q: 'Gdzie odbywają się warsztaty?', a: '' },
-	// { q: 'Ile trwają warsztaty i co jest w cenie?', a: '' },
-	// { q: 'Czy jest wersja wegetariańska?', a: '' },
-	// { q: 'Z jakim wyprzedzeniem zarezerwować termin?', a: '' },
-	items: [],
+	items: [
+		{ q: 'Czy trzeba umieć gotować?', a: 'Nie. Zaczynamy od podstaw – od ryżu i krojenia – i krok po kroku dochodzimy do gotowych rolek.' },
+		{ q: 'Ile osób może wziąć udział?', a: 'Warsztaty prowadzę dla grup od 6 do 20 osób. Przy większej grupie dzielimy się na dwie tury – napisz, ile Was będzie, a coś zaproponuję.' },
+		{ q: 'Gdzie odbywają się warsztaty?', a: 'U mnie w kuchni warsztatowej albo u Was – w biurze, lokalu czy w domu. Na miejsce przywożę cały sprzęt i składniki.' },
+		{ q: 'Ile trwają warsztaty i co jest w cenie?', a: 'Około 3 godzin. W cenie są wszystkie składniki, sprzęt, fartuchy i napoje bezalkoholowe. To, czego nie zjecie na miejscu, zabieracie do domu.' },
+		{ q: 'Czy jest wersja wegetariańska?', a: 'Tak. Przygotuję rolki z warzywami, tofu i omletem tamago – wystarczy, że dasz znać przy rezerwacji.' },
+		{ q: 'Z jakim wyprzedzeniem zarezerwować termin?', a: 'Najlepiej 2–3 tygodnie wcześniej, a przed świętami nawet miesiąc. Otwarte terminy znajdziesz w terminarzu powyżej.' },
+	],
 }
 
 export const contact = {

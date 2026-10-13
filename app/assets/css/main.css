@@ -75,6 +75,12 @@
 		@apply text-pretty;
 	}
 
+	/* Tailwind 4 nie ustawia już kursora na przyciskach */
+	button:not(:disabled),
+	[role='button']:not([aria-disabled='true']) {
+		cursor: pointer;
+	}
+
 	.prose-content p + p {
 		@apply mt-5;
 	}

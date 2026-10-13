@@ -12,7 +12,7 @@ import dots from '~/assets/img/section-dots.svg'
 				<p v-for="(p, i) in about.paragraphs" :key="i" class="mb-5 text-[#e0e0e0] last:mb-0">{{ p }}</p>
 			</div>
 			<div class="relative w-full pt-12 lg:w-1/2">
-				<img :src="dots" alt="" aria-hidden="true" class="absolute top-0 right-0 z-10 w-1/6 opacity-80">
+				<img :src="dots" alt="" aria-hidden="true" width="178" height="349" class="absolute top-0 right-0 z-10 w-1/6 opacity-80">
 				<AppPicture
 					name="group-with-marcin"
 					alt="Marcin z uczestnikami warsztatów"

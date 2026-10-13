@@ -24,14 +24,18 @@ const props = withDefaults(defineProps<{
 const png = ['cta-board', 'footer-board', 'nigiri-plate']
 const src = computed(() => `/${props.name}.${png.includes(props.name) ? 'png' : 'jpg'}`)
 
-// Oryginały węższe niż 1920 px – warianty nie mogą być od nich szersze (bez powiększania)
-const originalWidth: Record<string, number> = {
-	'cta-board': 1052, 'footer-board': 908, 'nigiri-plate': 664, 'group-with-marcin': 857, 'corporate-workshop': 771,
-	'hero-group': 1590, 'nori-hands': 857, 'prep-station': 1440, 'rolling-sushi': 1368, 'rolls-plate': 1364,
-	'shaping-nigiri': 1365, 'topping-roll': 1364, 'workshop-hands': 1364,
+// Wymiary oryginałów [szer., wys.] – width/height na <img> (proporcje, brak skoków układu);
+// warianty nie mogą być szersze niż oryginał (bez powiększania)
+const originalSize: Record<string, [number, number]> = {
+	'corporate-workshop': [771, 515], 'cta-board': [1052, 435], 'flaming-dish': [2400, 1503], 'footer-board': [908, 473],
+	'green-rolls': [2400, 1600], 'group-with-marcin': [857, 571], 'heart-roll': [2400, 1596], 'hero-group': [1590, 1059],
+	'nigiri-plate': [664, 684], 'nori-hands': [857, 571], 'prep-station': [1440, 1800], 'rolling-sushi': [1368, 914],
+	'rolls-plate': [1364, 909], 'shaping-nigiri': [1365, 910], 'sushi-stand': [2310, 1536], 'topping-roll': [1364, 909],
+	'tuna-hand': [2400, 1596], 'workshop-hands': [1364, 909],
 }
+const size = computed(() => originalSize[props.name])
 const widths = computed(() => {
-	const max = originalWidth[props.name] ?? Infinity
+	const max = size.value?.[0] ?? Infinity
 	return [...new Set((props.widths ?? [320, 480, 640, 960, 1280]).map(w => Math.min(w, max)))].sort((a, b) => a - b)
 })
 
@@ -50,6 +54,8 @@ const fallback = computed(() =>
 		<img
 			:src="fallback"
 			:alt="alt"
+			:width="size?.[0]"
+			:height="size?.[1]"
 			:loading="loading"
 			:fetchpriority="fetchpriority"
 			decoding="async"

@@ -7,7 +7,7 @@ import dots from '~/assets/img/section-dots.svg'
 	<section id="warsztaty" class="py-24 lg:py-40">
 		<div class="container grid items-center gap-16 lg:grid-cols-2">
 			<div class="relative pt-12">
-				<img :src="dots" alt="" aria-hidden="true" class="absolute top-0 left-0 z-10 w-1/6">
+				<img :src="dots" alt="" aria-hidden="true" width="178" height="349" class="absolute top-0 left-0 z-10 w-1/6">
 				<AppPicture
 					name="workshop-hands"
 					alt="Uczestnicy warsztatów z Marcinem przy wspólnym stole"

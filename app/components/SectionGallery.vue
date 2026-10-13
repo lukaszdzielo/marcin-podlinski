@@ -55,7 +55,7 @@ const tile = 'group relative block h-full w-full overflow-hidden focus-visible:o
 				<AppPicture
 					:name="big!.name"
 					:alt="big!.alt"
-					sizes="(min-width: 640px) 50vw, 100vw"
+					sizes="(min-width: 1536px) 624px, (min-width: 640px) calc(50vw - 2rem), calc(100vw - 2rem)"
 					class="h-full"
 					img-class="size-full object-cover transition-transform duration-500 group-hover:scale-105"
 				/>
@@ -79,7 +79,7 @@ const tile = 'group relative block h-full w-full overflow-hidden focus-visible:o
 				<AppPicture
 					:name="p.name"
 					:alt="p.alt"
-					sizes="(min-width: 640px) 25vw, 50vw"
+					sizes="(min-width: 1536px) 304px, (min-width: 640px) calc(25vw - 2rem), calc(50vw - 1.5rem)"
 					class="h-full"
 					img-class="size-full object-cover transition-transform duration-500 group-hover:scale-105"
 				/>

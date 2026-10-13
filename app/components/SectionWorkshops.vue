@@ -11,7 +11,7 @@ import dots from '~/assets/img/section-dots.svg'
 				<AppPicture
 					name="workshop-hands"
 					alt="Uczestnicy warsztatów z Marcinem przy wspólnym stole"
-					sizes="(min-width: 1024px) 40vw, 90vw"
+					sizes="(min-width: 1024px) 480px, 90vw"
 					img-class="ms-[18%] aspect-[3/2] w-[82%] object-cover"
 				/>
 				<AppPicture

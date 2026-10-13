@@ -10,7 +10,7 @@ import { learn } from '~/data/content'
 				<AppPicture
 					name="nigiri-plate"
 					alt="Nigiri z łososiem na drewnianym talerzu"
-					sizes="440px"
+					sizes="(min-width: 1024px) 440px, (min-width: 640px) 380px, 300px"
 					img-class="w-[300px] drop-shadow-[0_20px_26px_rgba(0,0,0,.22)] sm:w-[380px] lg:w-[440px]"
 				/>
 			</div>

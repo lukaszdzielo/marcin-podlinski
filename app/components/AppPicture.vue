@@ -8,7 +8,7 @@ const props = withDefaults(defineProps<{
 	name: string
 	alt: string
 	sizes?: string
-	/** Szerokości wariantów w px – domyślnie 640 i 1280 (nigdy szersze niż oryginał) */
+	/** Szerokości wariantów w px – domyślnie 320–1280 (nigdy szersze niż oryginał) */
 	widths?: number[]
 	loading?: 'lazy' | 'eager'
 	fetchpriority?: 'high' | 'low' | 'auto'
@@ -32,7 +32,7 @@ const originalWidth: Record<string, number> = {
 }
 const widths = computed(() => {
 	const max = originalWidth[props.name] ?? Infinity
-	return [...new Set((props.widths ?? [640, 1280]).map(w => Math.min(w, max)))].sort((a, b) => a - b)
+	return [...new Set((props.widths ?? [320, 480, 640, 960, 1280]).map(w => Math.min(w, max)))].sort((a, b) => a - b)
 })
 
 const img = useImage()

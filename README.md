@@ -1,75 +1,37 @@
-# Nuxt 3 Minimal Starter
+# Sushi Show – Marcin Podliński
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Strona wizytówka: warsztaty sushi, terminarz i catering. Nuxt 4 + Tailwind CSS 4, publikowana na GitHub Pages.
 
-## Setup
-
-Make sure to install the dependencies:
+## Start
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+npm run dev        # http://localhost:3000/marcin-podlinski/
+npm run generate   # statyczna wersja w .output/public
 ```
 
-## Development Server
+Wymagany Node.js 22.22+ (lub 24 LTS).
 
-Start the development server on `http://localhost:3000`:
+## Gdzie co jest
 
-```bash
-# npm
-npm run dev
+- `app/data/content.ts` – **wszystkie teksty i dane strony** (hero, terminarz, oferta, FAQ, opinie, kontakt)
+- `app/components/Section*.vue` – sekcje strony, `AppHeader` / `AppFooter` – nagłówek, formularz i stopka
+- `app/components/AppPicture.vue` – zdjęcia w **AVIF z fallbackiem WebP**, po 2–3 szerokości (`srcset`), przez `@nuxt/image`
+- `app/assets/img/photos/` – tylko oryginały (`<nazwa>.jpg`, wycięte w `.png`, maks. 2400 px); warianty generują się przy `nuxt generate` do `_ipx/`
+- Nowe zdjęcie: wrzuć oryginał do `photos/` i użyj `<AppPicture name="<nazwa>" … />`
+- `app/composables/useSchedule.ts` – terminy warsztatów (arkusz Google CSV albo lista z `content.ts`)
 
-# pnpm
-pnpm run dev
+## Terminarz
 
-# yarn
-yarn dev
+Najprościej: arkusz Google z kolumnami `tytul | data (RRRR-MM-DD) | link`, opublikowany jako CSV
+(Plik → Udostępnij → Opublikuj w internecie → CSV). Adres wklej do `schedule.sheetCsvUrl` w `content.ts`.
+Przeszłe terminy chowają się same, pokazywane są maks. 4 najbliższe.
 
-# bun
-bun run dev
-```
+## Formularz
 
-## Production
+Bez klucza otwiera program pocztowy z gotową wiadomością. Po wpisaniu klucza z web3forms.com
+do `contact.web3formsKey` wysyła wiadomość bezpośrednio.
 
-Build the application for production:
+## Opinie
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Sekcja „Co o mnie mówią” pokazuje się dopiero, gdy w `content.ts` są prawdziwe opinie (`reviews.items`).
